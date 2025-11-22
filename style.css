@@ -517,7 +517,7 @@ section {
     gap: 2rem;
 }
 
-/* Essay Cards - QUADROS AZUIS DO MESMO TAMANHO */
+/* Essay Cards */
 .essay-card {
     background: var(--white);
     border-radius: 15px;
@@ -542,7 +542,7 @@ section {
     padding: 2rem;
     position: relative;
     flex-shrink: 0;
-    height: 160px; /* ALTURA FIXA PARA TODOS OS QUADROS AZUIS */
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -576,8 +576,7 @@ section {
     font-weight: 600;
     margin: 0.5rem 0 0.5rem 0;
     line-height: 1.3;
-    /* Método alternativo para limitar texto sem -webkit-line-clamp */
-    max-height: 3.2em; /* 2 linhas * 1.6 line-height */
+    max-height: 3.2em;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -755,6 +754,57 @@ section {
 }
 
 .journey-stat-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Acknowledgments Section */
+.acknowledgments-section {
+    background: var(--white);
+}
+
+.acknowledgments-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.acknowledgment-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background: var(--light-blue);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.acknowledgment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.acknowledgment-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.acknowledgment-text h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.acknowledgment-text p {
     color: var(--text-light);
     line-height: 1.6;
 }
@@ -1002,6 +1052,15 @@ section {
         align-self: center;
     }
 
+    .acknowledgment-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .acknowledgment-icon {
+        align-self: center;
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1012,15 +1071,14 @@ section {
         align-items: center;
     }
 
-    /* Ajustes para os quadros azuis em mobile */
     .card-header {
-        height: 140px; /* Altura reduzida para mobile */
+        height: 140px;
         padding: 1.5rem;
     }
 
     .card-title {
         font-size: 1.1rem;
-        max-height: 2.8em; /* Ajustado para mobile */
+        max-height: 2.8em;
     }
 }
 
@@ -1045,15 +1103,14 @@ section {
         grid-template-columns: 1fr;
     }
 
-    /* Ajustes finos para telas muito pequenas */
     .card-header {
-        height: 130px; /* Altura ainda menor para telas pequenas */
+        height: 130px;
         padding: 1.25rem;
     }
 
     .card-title {
         font-size: 1rem;
-        max-height: 2.6em; /* Ajustado para telas pequenas */
+        max-height: 2.6em;
     }
 
     .card-theme {
