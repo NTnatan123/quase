@@ -350,7 +350,7 @@ const redacoes = [
               consuma mais produtos culturais de outros países, deixando de valorizar o que é produzido no Brasil.
               </p>
             
-            <p>" Diante disso, é essencial que o governo e as escolas invistam em políticas de incentivo e educação cultural.
+            <p> Diante disso, é essencial que o governo e as escolas invistam em políticas de incentivo e educação cultural.
              Campanhas, eventos regionais e o ensino da cultura popular nas escolas podem ajudar a fortalecer o orgulho nacional 
              e preservar as tradições. Assim, a cultura popular poderá ser reconhecida como parte fundamental da identidade brasileira.</p>
         `
